@@ -18,5 +18,7 @@ from django.contrib import admin
 from blog.views import index
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^blog/', index),
+    # 默认主页
+    url(r'', index),
+    url(r'^index/', index),
 ]
